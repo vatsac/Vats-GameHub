@@ -12,7 +12,8 @@ export interface Game {
   id: number;
   name: string;
   background_image: string;
-  parent_platforms: {platform: Platform}[]
+  parent_platforms: {platform: Platform}[];
+  metacritic: number;
 }
 
 interface FetchGamesResponse {
@@ -45,7 +46,8 @@ const useGames = () => {
                 { platform: { id: 1, name: 'PlayStation', slug: 'playstation' } },
                 { platform: { id: 2, name: 'Xbox', slug: 'xbox' } },
                 { platform: { id: 3, name: 'PC', slug: 'pc' } }
-            ]
+            ],
+            metacritic: 95
         },
         {
             id: 2,
@@ -55,7 +57,8 @@ const useGames = () => {
                 { platform: { id: 1, name: 'PlayStation', slug: 'playstation' } },
                 { platform: { id: 2, name: 'Xbox', slug: 'xbox' } },
                 { platform: { id: 3, name: 'PC', slug: 'pc' } }
-            ]
+            ],
+            metacritic: 93
         },
         {
             id: 3,
@@ -63,7 +66,8 @@ const useGames = () => {
             background_image: 'https://source.unsplash.com/collection/190727/800x600?3',
             parent_platforms: [
                 { platform: { id: 3, name: 'PC', slug: 'pc' } }
-            ]
+            ],
+            metacritic: 89
         },
         {
           id: 4,
@@ -73,7 +77,8 @@ const useGames = () => {
               { platform: { id: 1, name: 'PlayStation', slug: 'playstation' } },
               { platform: { id: 2, name: 'Xbox', slug: 'xbox' } },
               { platform: { id: 3, name: 'PC', slug: 'pc' } }
-          ]
+          ],
+          metacritic: 87
       },
       {
           id: 5,
@@ -81,7 +86,8 @@ const useGames = () => {
           background_image: 'https://source.unsplash.com/collection/190727/800x600?5',
           parent_platforms: [
               { platform: { id: 1, name: 'PlayStation', slug: 'playstation' } }
-          ]
+          ],
+          metacritic: 69
       },
       {
           id: 6,
@@ -89,7 +95,9 @@ const useGames = () => {
           background_image: 'https://source.unsplash.com/collection/190727/800x600?6',
           parent_platforms: [
               { platform: { id: 1, name: 'PlayStation', slug: 'playstation' } }
-          ]
+          ],
+          
+            metacritic: 71
       },
       {
           id: 7,
@@ -97,7 +105,9 @@ const useGames = () => {
           background_image: 'https://source.unsplash.com/collection/190727/800x600?7',
           parent_platforms: [
               { platform: { id: 1, name: 'PlayStation', slug: 'playstation' } }
-          ]
+          ],
+          
+            metacritic: 95
       },
       {
           id: 8,
@@ -107,7 +117,9 @@ const useGames = () => {
               { platform: { id: 1, name: 'PlayStation', slug: 'playstation' } },
               { platform: { id: 2, name: 'Xbox', slug: 'xbox' } },
               { platform: { id: 3, name: 'PC', slug: 'pc' } }
-          ]
+          ],
+          
+            metacritic: 95
       },
       {
           id: 9,
@@ -115,7 +127,9 @@ const useGames = () => {
           background_image: 'https://source.unsplash.com/collection/190727/800x600?9',
           parent_platforms: [
               { platform: { id: 1, name: 'PlayStation', slug: 'playstation' } }
-          ]
+          ],
+          
+            metacritic: 95
       },
       {
           id: 10,
@@ -126,7 +140,9 @@ const useGames = () => {
               { platform: { id: 4, name: 'Nintendo', slug: 'nintendo' } },
               { platform: { id: 5, name: 'Xbox', slug: 'xbox' } },
               { platform: { id: 6, name: 'PlayStation', slug: 'playstation' } }
-          ]
+          ],
+          
+            metacritic: 95
       },
       {
           id: 11,
@@ -136,7 +152,9 @@ const useGames = () => {
               { platform: { id: 1, name: 'PlayStation', slug: 'playstation' } },
               { platform: { id: 2, name: 'Xbox', slug: 'xbox' } },
               { platform: { id: 3, name: 'PC', slug: 'pc' } }
-          ]
+          ],
+          
+            metacritic: 95
       },
       {
           id: 12,
@@ -146,7 +164,9 @@ const useGames = () => {
               { platform: { id: 3, name: 'PC', slug: 'pc' } },
               { platform: { id: 6, name: 'PlayStation', slug: 'playstation' } },
               { platform: { id: 5, name: 'Xbox', slug: 'xbox' } }
-          ]
+          ],
+          
+            metacritic: 95
       },
       {
           id: 13,
@@ -156,7 +176,9 @@ const useGames = () => {
               { platform: { id: 1, name: 'PlayStation', slug: 'playstation' } },
               { platform: { id: 2, name: 'Xbox', slug: 'xbox' } },
               { platform: { id: 3, name: 'PC', slug: 'pc' } }
-          ]
+          ],
+          
+            metacritic: 95
       }
         ]);
       });
