@@ -10,7 +10,6 @@ interface Props {
 }
 
 const GameGrid = ({selectedGenre}: Props) => {
-  //  const { games, error, isLoading } = useGames(selectedGenre);
   const { data, error, isLoading } = useGames(selectedGenre);
   const skeletons = [1, 2, 3, 4, 5, 6];
 
@@ -25,7 +24,6 @@ const GameGrid = ({selectedGenre}: Props) => {
             </GameCardContainer>
           ))}
         {
-          //games.map((game) => (
           data.map((game) => (
             <GameCardContainer key={game.id}>
               <GameCard  game={game} />

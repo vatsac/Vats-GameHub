@@ -12,9 +12,7 @@ interface Props {
 
 const GenreList = ({onSelectGenre}: Props) => {
   const { data, isLoading, error } = useGenres();
-  //need to remove comment for below code
-  //const { data, isLoading, error } = useGenres();
-  //if(error) return null;
+  if(error) return null;
 
   if(isLoading) return <Spinner />
 
@@ -26,7 +24,7 @@ const GenreList = ({onSelectGenre}: Props) => {
             <Image
               boxSize="32px"
               borderRadius={8}
-              src={/*getCroppedImageUrl*/ genre.image_background}
+              src={ genre.image_background}
             />
             <Button onClick={() => onSelectGenre(genre)} fontSize='lg' variant='link'>{genre.name}</Button>
           </HStack>
